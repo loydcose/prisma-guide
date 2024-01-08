@@ -1,0 +1,27 @@
+install prisma
+- npm i prisma
+
+initialize prisma (where using sqlite for basic purposes)
+- npx prisma init --datasource-provider sqlite
+
+migrate models (whenever you modified schema models, you need to do this)
+- npx prisma migrate dev --name init
+
+apply and migrate models, base on the migrations file (typically use when git pulling)
+- npx prisma generate
+
+
+open database gui on the browser
+- npx prisma studio
+
+
+
+
+ERRORS:
+Foreign key constraint failed on the field: `foreign key`
+this error accours because the thing that you are deleting has still some
+connection/relation to other models, delete the other models first.
+
+
+
+
