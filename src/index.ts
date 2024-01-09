@@ -1,10 +1,15 @@
 import express, { Request, Response } from "express"
+import { prisma } from "./db"
 
 const app = express()
 
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello, TypeScript Express!")
+app.get("/", async (req: Request, res: Response) => {
+  const users = await prisma.user.findMany()
+  // const users: any[] = []
+
+
+  res.send(users)
 })
 
 
