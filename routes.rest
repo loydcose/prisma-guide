@@ -1,2 +1,41 @@
 http://localhost:3000/
 
+###
+
+http://localhost:3000/users
+
+###
+
+http://localhost:3000/posts
+
+###
+
+POST http://localhost:3000/tags
+
+###
+
+POST http://localhost:3000/user
+
+###
+
+POST http://localhost:3000/post
+
+###
+
+DELETE http://localhost:3000/users
+
+###
+
+DELETE http://localhost:3000/posts
+
+
+### Get all lifestyle articles
+
+http://localhost:3000/posts/cooking
+
+
+
+
+
+
+
